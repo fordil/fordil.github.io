@@ -4,7 +4,7 @@ const yesBtn = document.querySelector('.yes-btn');
 const noBtn = document.querySelector('.no-btn');
 const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
-
+const myAudio = document.querySelector('#myAudio');  // Select the audio element
 
 // yesBtn.addEventListener('click', () => {
 //     question.innerHTML = 'Sheyy Njn vrthe paranja U atrakkonnulla😅';
@@ -20,6 +20,7 @@ yesBtn.addEventListener('click', () => {
     
     // Change the image source
     avt.src = 'v2dd.png'; // Replace with your new image path
+    myAudio.play(); 
     disableButtonsAndHide();
 });
 
