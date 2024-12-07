@@ -4,12 +4,13 @@ const yesBtn = document.querySelector('.yes-btn');
 const noBtn = document.querySelector('.no-btn');
 const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
-const myAudio = document.querySelector('#myAudio');  // Select the audio element
+
 
 window.onload = function() {
-            myAudio.play();
-        };
-
+    const audio = document.getElementById('#myAudio');
+    audio.muted = false; // Unmute the audio
+    audio.play().catch(error => console.log("Autoplay failed:", error));
+};
 // yesBtn.addEventListener('click', () => {
 //     question.innerHTML = 'Sheyy Njn vrthe paranja U atrakkonnulla😅';
 //     avt.innerHTML= ''
