@@ -6,6 +6,9 @@ const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
 const myAudio = document.querySelector('#myAudio');  // Select the audio element
 
+myAudio.play();
+
+
 // yesBtn.addEventListener('click', () => {
 //     question.innerHTML = 'Sheyy Njn vrthe paranja U atrakkonnulla😅';
 //     avt.innerHTML= ''
