@@ -6,7 +6,7 @@ const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
 const myAudio = document.querySelector('#myAudio');  // Select the audio element
 
-myAudio.play();
+myAudio.muted=false;
 
 
 // yesBtn.addEventListener('click', () => {
